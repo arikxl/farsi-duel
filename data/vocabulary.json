@@ -1,0 +1,1178 @@
+{
+    "vocabulary_collections": [
+        {
+            "title": "אוצר מילים - חלק 1 (ספטמבר 2023)",
+            "topic": "כינויי גוף ומשפחה",
+            "items": [
+                {
+                    "hebrew": "אני",
+                    "persian": "مَن",
+                    "transliteration": "Man"
+                },
+                {
+                    "hebrew": "אנחנו",
+                    "persian": "ما",
+                    "transliteration": "Maa"
+                },
+                {
+                    "hebrew": "את/אתה",
+                    "persian": "تُو",
+                    "transliteration": "Tuo"
+                },
+                {
+                    "hebrew": "אתם/אתן",
+                    "persian": "شٌما",
+                    "transliteration": "shoma"
+                },
+                {
+                    "hebrew": "היא/הוא",
+                    "persian": "او / وِی/ آن",
+                    "transliteration": "Ou / Vey / An"
+                },
+                {
+                    "hebrew": "הן/הם",
+                    "persian": "آنها / ایشان",
+                    "transliteration": "Anha / Ishan"
+                },
+                {
+                    "hebrew": "משפחה",
+                    "persian": "خَانوَاده",
+                    "transliteration": "Khanevade"
+                },
+                {
+                    "hebrew": "אמא",
+                    "persian": "مَادر",
+                    "transliteration": "madr"
+                },
+                {
+                    "hebrew": "אבא",
+                    "persian": "پِدر",
+                    "transliteration": "Pedar"
+                },
+                {
+                    "hebrew": "בן",
+                    "persian": "پِسر",
+                    "transliteration": "Pesar"
+                },
+                {
+                    "hebrew": "בת",
+                    "persian": "دُختر",
+                    "transliteration": "Dokhtar"
+                },
+                {
+                    "hebrew": "ילד",
+                    "persian": "بچه",
+                    "transliteration": "Baace"
+                },
+                {
+                    "hebrew": "אח",
+                    "persian": "برَادر",
+                    "transliteration": "Bradar"
+                },
+                {
+                    "hebrew": "אחות",
+                    "persian": "خواهر",
+                    "transliteration": "Khahr"
+                },
+                {
+                    "hebrew": "בעל",
+                    "persian": "شوهر",
+                    "transliteration": "Shohr"
+                },
+                {
+                    "hebrew": "הורים",
+                    "persian": "والدین",
+                    "transliteration": "Vaaledin"
+                },
+                {
+                    "hebrew": "בן/בת זוג",
+                    "persian": "همسر",
+                    "transliteration": "Hamsar"
+                },
+                {
+                    "hebrew": "גדול",
+                    "persian": "بُزرگ",
+                    "transliteration": "Bozorg"
+                },
+                {
+                    "hebrew": "סבתא",
+                    "persian": "مادر بُزرگ",
+                    "transliteration": "Madr Bozorg"
+                },
+                {
+                    "hebrew": "סבא",
+                    "persian": "پدر بُزرگ",
+                    "transliteration": "pedar Bozorg"
+                },
+                {
+                    "hebrew": "דודה (אחות של אמא)",
+                    "persian": "خاله",
+                    "transliteration": "khalee"
+                },
+                {
+                    "hebrew": "דוד (אח של אמא)",
+                    "persian": "دایی",
+                    "transliteration": "Daaei"
+                },
+                {
+                    "hebrew": "דודה (אחות של אבא)",
+                    "persian": "عمه",
+                    "transliteration": "aame"
+                },
+                {
+                    "hebrew": "דוד (אח של אבא)",
+                    "persian": "عمو",
+                    "transliteration": "aamo"
+                }
+            ]
+        },
+        {
+            "title": "אוצר מילים - חלק 2 (25/10/23)",
+            "topic": "כללי",
+            "items": [
+                {
+                    "hebrew": "שם",
+                    "persian": "نَام/ اِسم",
+                    "transliteration": "Nam"
+                },
+                {
+                    "hebrew": "שיעור",
+                    "persian": "دَرس",
+                    "transliteration": "Dars"
+                },
+                {
+                    "hebrew": "מורה",
+                    "persian": "مُعَلم",
+                    "transliteration": "Moalem"
+                },
+                {
+                    "hebrew": "ספר",
+                    "persian": "کتَاب",
+                    "transliteration": "Ketab"
+                },
+                {
+                    "hebrew": "שיעור (כיתה)",
+                    "persian": "کِلاس",
+                    "transliteration": "Kelas"
+                },
+                {
+                    "hebrew": "טוב",
+                    "persian": "خوب",
+                    "transliteration": "Chob"
+                },
+                {
+                    "hebrew": "רע",
+                    "persian": "بد",
+                    "transliteration": "Bad"
+                },
+                {
+                    "hebrew": "חיים",
+                    "persian": "زِندگی",
+                    "transliteration": "Zendegi"
+                },
+                {
+                    "hebrew": "חבר/ה",
+                    "persian": "دوست",
+                    "transliteration": "Doset"
+                },
+                {
+                    "hebrew": "קל",
+                    "persian": "آسان",
+                    "transliteration": "Asan"
+                },
+                {
+                    "hebrew": "מדינה",
+                    "persian": "کِشور",
+                    "transliteration": "Keshvr"
+                },
+                {
+                    "hebrew": "עיר",
+                    "persian": "شهر",
+                    "transliteration": "Shahar"
+                },
+                {
+                    "hebrew": "שכונה",
+                    "persian": "مَحَله",
+                    "transliteration": "Mahaleh"
+                },
+                {
+                    "hebrew": "בית",
+                    "persian": "خَانه",
+                    "transliteration": "Chaneh"
+                },
+                {
+                    "hebrew": "שפה",
+                    "persian": "زبان",
+                    "transliteration": "Zaban"
+                }
+            ]
+        },
+        {
+            "title": "אוצר מילים מס' 3 (8/11/23)",
+            "topic": "איברי הגוף ותארים",
+            "items": [
+                {
+                    "hebrew": "ראש",
+                    "persian": "سر",
+                    "transliteration": "sar"
+                },
+                {
+                    "hebrew": "יד",
+                    "persian": "دست",
+                    "transliteration": "Dast"
+                },
+                {
+                    "hebrew": "רגל",
+                    "persian": "پا",
+                    "transliteration": "paa"
+                },
+                {
+                    "hebrew": "עין",
+                    "persian": "چشم",
+                    "transliteration": "chshem"
+                },
+                {
+                    "hebrew": "אף",
+                    "persian": "دماغ",
+                    "transliteration": "dmagh"
+                },
+                {
+                    "hebrew": "פה",
+                    "persian": "دهان",
+                    "transliteration": "dahan"
+                },
+                {
+                    "hebrew": "לשון",
+                    "persian": "زبان",
+                    "transliteration": "zban"
+                },
+                {
+                    "hebrew": "אצבע",
+                    "persian": "انگشت",
+                    "transliteration": "angusht"
+                },
+                {
+                    "hebrew": "גב",
+                    "persian": "پشت",
+                    "transliteration": "Posht"
+                },
+                {
+                    "hebrew": "ציפורן",
+                    "persian": "ناخن",
+                    "transliteration": "Nachon"
+                },
+                {
+                    "hebrew": "שיער",
+                    "persian": "مو",
+                    "transliteration": "moo"
+                },
+                {
+                    "hebrew": "אוזן",
+                    "persian": "گوش",
+                    "transliteration": "Gosh"
+                },
+                {
+                    "hebrew": "שן",
+                    "persian": "دندان",
+                    "transliteration": "dandan"
+                },
+                {
+                    "hebrew": "צוואר",
+                    "persian": "گردن",
+                    "transliteration": "Grdn"
+                },
+                {
+                    "hebrew": "מותן",
+                    "persian": "کمر",
+                    "transliteration": "kamr"
+                },
+                {
+                    "hebrew": "ים",
+                    "persian": "دریا",
+                    "transliteration": "Drya"
+                },
+                {
+                    "hebrew": "מכוער",
+                    "persian": "زشت",
+                    "transliteration": "Zshet"
+                },
+                {
+                    "hebrew": "יפה",
+                    "persian": "زیبا",
+                    "transliteration": "Ziba"
+                },
+                {
+                    "hebrew": "אוכלוסיה (אנשים)",
+                    "persian": "مردم",
+                    "transliteration": "Mrdum"
+                },
+                {
+                    "hebrew": "נהר",
+                    "persian": "رود",
+                    "transliteration": "Rud"
+                },
+                {
+                    "hebrew": "עולם",
+                    "persian": "دُنیا",
+                    "transliteration": "Donya"
+                },
+                {
+                    "hebrew": "אוויר (מזג אוויר)",
+                    "persian": "هوا",
+                    "transliteration": "Hva"
+                },
+                {
+                    "hebrew": "חם",
+                    "persian": "گرم",
+                    "transliteration": "Grm"
+                },
+                {
+                    "hebrew": "קר",
+                    "persian": "سرد",
+                    "transliteration": "Sard"
+                },
+                {
+                    "hebrew": "קרוב ל-",
+                    "persian": "نزدیک به",
+                    "transliteration": "Nazdik be"
+                },
+                {
+                    "hebrew": "רחוק מ-",
+                    "persian": "دور از",
+                    "transliteration": "Dor az"
+                },
+                {
+                    "hebrew": "קצר",
+                    "persian": "کوتاه",
+                    "transliteration": "Kota"
+                },
+                {
+                    "hebrew": "גבוה",
+                    "persian": "بلند",
+                    "transliteration": "Buland"
+                },
+                {
+                    "hebrew": "למעלה",
+                    "persian": "بالا",
+                    "transliteration": "Bala"
+                },
+                {
+                    "hebrew": "למטה",
+                    "persian": "پایین",
+                    "transliteration": "Paayin"
+                }
+            ]
+        },
+        {
+            "title": "אוצר מילים מס' 4 (22/11/23)",
+            "topic": "צבעים ומילות יחס",
+            "items": [
+                {
+                    "hebrew": "צבע",
+                    "persian": "رنگ",
+                    "transliteration": "RANG"
+                },
+                {
+                    "hebrew": "צהוב",
+                    "persian": "زَرد",
+                    "transliteration": "ZARD"
+                },
+                {
+                    "hebrew": "אדום",
+                    "persian": "قِرمز",
+                    "transliteration": "GHRMEZ"
+                },
+                {
+                    "hebrew": "שחור",
+                    "persian": "سیاه",
+                    "transliteration": "SIYA"
+                },
+                {
+                    "hebrew": "לבן",
+                    "persian": "سفید",
+                    "transliteration": "SEFID"
+                },
+                {
+                    "hebrew": "כחול",
+                    "persian": "آبی",
+                    "transliteration": "ABI"
+                },
+                {
+                    "hebrew": "כתום",
+                    "persian": "نارنجی",
+                    "transliteration": "NARNGY"
+                },
+                {
+                    "hebrew": "ירוק",
+                    "persian": "سبز",
+                    "transliteration": "SABZ"
+                },
+                {
+                    "hebrew": "ורוד",
+                    "persian": "صورتی",
+                    "transliteration": "SURATI"
+                },
+                {
+                    "hebrew": "סגול",
+                    "persian": "بنفش",
+                    "transliteration": "BANAFSH"
+                },
+                {
+                    "hebrew": "על",
+                    "persian": "رویِ",
+                    "transliteration": "ruye"
+                },
+                {
+                    "hebrew": "ל-, אל",
+                    "persian": "به",
+                    "transliteration": "beh"
+                },
+                {
+                    "hebrew": "או",
+                    "persian": "یا",
+                    "transliteration": "Ya"
+                },
+                {
+                    "hebrew": "אבל",
+                    "persian": "اما / ولی",
+                    "transliteration": "Ama/ vali"
+                }
+            ]
+        },
+        {
+            "title": "אוצר מילים מס' 6 (20/12/23)",
+            "topic": "זמן וימות השבוע",
+            "items": [
+                {
+                    "hebrew": "שנה",
+                    "persian": "سال",
+                    "transliteration": "Saal"
+                },
+                {
+                    "hebrew": "חודש",
+                    "persian": "ماه",
+                    "transliteration": "Maahh"
+                },
+                {
+                    "hebrew": "שבוע",
+                    "persian": "هفته",
+                    "transliteration": "hafteh"
+                },
+                {
+                    "hebrew": "יום",
+                    "persian": "روز",
+                    "transliteration": "Roz"
+                },
+                {
+                    "hebrew": "יום ראשון",
+                    "persian": "یکشنبه",
+                    "transliteration": "yekshanbe"
+                },
+                {
+                    "hebrew": "יום שני",
+                    "persian": "دوشنبه",
+                    "transliteration": "dooshanbe"
+                },
+                {
+                    "hebrew": "יום שלישי",
+                    "persian": "سهشنبه",
+                    "transliteration": "seeshanbe"
+                },
+                {
+                    "hebrew": "יום רביעי",
+                    "persian": "چهار شنبه",
+                    "transliteration": "caharshanbe"
+                },
+                {
+                    "hebrew": "יום חמישי",
+                    "persian": "پنجشنبه",
+                    "transliteration": "pnajshanbe"
+                },
+                {
+                    "hebrew": "יום שישי",
+                    "persian": "جمعه",
+                    "transliteration": "jumee"
+                },
+                {
+                    "hebrew": "יום שבת",
+                    "persian": "شنبه",
+                    "transliteration": "shanbe"
+                }
+            ]
+        },
+        {
+            "title": "אוצר מילים מס' 7 (19/1/23)",
+            "topic": "זמן ועונות",
+            "items": [
+                {
+                    "hebrew": "קיץ",
+                    "persian": "تابِستان",
+                    "transliteration": "Tabestan"
+                },
+                {
+                    "hebrew": "סתיו",
+                    "persian": "پائیز",
+                    "transliteration": "Paeiz"
+                },
+                {
+                    "hebrew": "חורף",
+                    "persian": "زِمِستان",
+                    "transliteration": "Zemestan"
+                },
+                {
+                    "hebrew": "אביב",
+                    "persian": "بَهار",
+                    "transliteration": "Bhar"
+                },
+                {
+                    "hebrew": "מחר",
+                    "persian": "فَردا",
+                    "transliteration": "Farda"
+                },
+                {
+                    "hebrew": "מחרתיים",
+                    "persian": "پَس فَردا",
+                    "transliteration": "Pas farda"
+                },
+                {
+                    "hebrew": "שנה שעברה",
+                    "persian": "پارسال",
+                    "transliteration": "Par sal"
+                },
+                {
+                    "hebrew": "שלשום",
+                    "persian": "پَریروز",
+                    "transliteration": "Paryroz"
+                },
+                {
+                    "hebrew": "עתיד",
+                    "persian": "آیَنده",
+                    "transliteration": "Ayndeh"
+                },
+                {
+                    "hebrew": "עכשיו",
+                    "persian": "حالا / اَلآن",
+                    "transliteration": "Hala / Alan"
+                },
+                {
+                    "hebrew": "מקודם, לפני",
+                    "persian": "قَبل",
+                    "transliteration": "Ghbl"
+                },
+                {
+                    "hebrew": "עבר",
+                    "persian": "گُذَشته",
+                    "transliteration": "Gozashte"
+                }
+            ]
+        },
+        {
+            "title": "אוצר מילים מס' 8 (20/1/24)",
+            "topic": "כללי ומילות קישור",
+            "items": [
+                {
+                    "hebrew": "חשמל",
+                    "persian": "برق",
+                    "transliteration": "Brgh"
+                },
+                {
+                    "hebrew": "חשוב",
+                    "persian": "مهم",
+                    "transliteration": "Mohem"
+                },
+                {
+                    "hebrew": "קל (משקל)",
+                    "persian": "سبک",
+                    "transliteration": "Sabok"
+                },
+                {
+                    "hebrew": "כבד",
+                    "persian": "سنگین",
+                    "transliteration": "Sangin"
+                },
+                {
+                    "hebrew": "קצר",
+                    "persian": "کوتاه",
+                    "transliteration": "Kotah"
+                },
+                {
+                    "hebrew": "ארוך",
+                    "persian": "دراز",
+                    "transliteration": "Deraz"
+                },
+                {
+                    "hebrew": "יפה",
+                    "persian": "زیبا",
+                    "transliteration": "Ziba"
+                },
+                {
+                    "hebrew": "כלב",
+                    "persian": "سگ",
+                    "transliteration": "Sag"
+                },
+                {
+                    "hebrew": "חתול",
+                    "persian": "گربه",
+                    "transliteration": "Gorbeh"
+                },
+                {
+                    "hebrew": "אורח",
+                    "persian": "مهمان",
+                    "transliteration": "Mehman"
+                },
+                {
+                    "hebrew": "מחשב",
+                    "persian": "رایانه",
+                    "transliteration": "Rayaneh"
+                },
+                {
+                    "hebrew": "רכוש",
+                    "persian": "مال",
+                    "transliteration": "Maal"
+                },
+                {
+                    "hebrew": "לא",
+                    "persian": "نه",
+                    "transliteration": "Nah"
+                },
+                {
+                    "hebrew": "כן",
+                    "persian": "بله / اره",
+                    "transliteration": "Areh/baleh"
+                },
+                {
+                    "hebrew": "עד / כדי",
+                    "persian": "تا",
+                    "transliteration": "Ta"
+                },
+                {
+                    "hebrew": "בין",
+                    "persian": "بین / میان",
+                    "transliteration": "Bein/miyan"
+                }
+            ]
+        },
+        {
+            "title": "אוצר מילים מס' 9 (6/3/24)",
+            "topic": "מקומות וממשל",
+            "items": [
+                {
+                    "hebrew": "חדר",
+                    "persian": "اتاق",
+                    "transliteration": "Otagh"
+                },
+                {
+                    "hebrew": "קומה",
+                    "persian": "طبقه",
+                    "transliteration": "Tabaghe"
+                },
+                {
+                    "hebrew": "תלמיד",
+                    "persian": "شاگرد",
+                    "transliteration": "Shagerd"
+                },
+                {
+                    "hebrew": "סטודנט",
+                    "persian": "دانشجو",
+                    "transliteration": "Daneshju"
+                },
+                {
+                    "hebrew": "מרצה",
+                    "persian": "استاد",
+                    "transliteration": "Ostad"
+                },
+                {
+                    "hebrew": "כסף",
+                    "persian": "پول",
+                    "transliteration": "Pol"
+                },
+                {
+                    "hebrew": "בנק",
+                    "persian": "بانک",
+                    "transliteration": "Bank"
+                },
+                {
+                    "hebrew": "מצרים",
+                    "persian": "مصر",
+                    "transliteration": "Mesr"
+                },
+                {
+                    "hebrew": "ירדן",
+                    "persian": "اردن",
+                    "transliteration": "Ordon"
+                },
+                {
+                    "hebrew": "סוריה",
+                    "persian": "سوریه",
+                    "transliteration": "Surieyh"
+                },
+                {
+                    "hebrew": "רוסיה",
+                    "persian": "روسیه",
+                    "transliteration": "Rusieyh"
+                },
+                {
+                    "hebrew": "שר",
+                    "persian": "وزیر",
+                    "transliteration": "Vazeir"
+                },
+                {
+                    "hebrew": "ראש, יו''ר, מנהל",
+                    "persian": "رئيس",
+                    "transliteration": "Raees"
+                },
+                {
+                    "hebrew": "קצר",
+                    "persian": "کوتاه",
+                    "transliteration": "Kutah"
+                },
+                {
+                    "hebrew": "גבוה",
+                    "persian": "بلند",
+                    "transliteration": "Boland"
+                },
+                {
+                    "hebrew": "עניין",
+                    "persian": "امر",
+                    "transliteration": "Aamr"
+                }
+            ]
+        },
+        {
+            "title": "אוצר מילים מס' 10 (23/5/24)",
+            "topic": "פגישות ולימודים",
+            "items": [
+                {
+                    "hebrew": "פגישה",
+                    "persian": "ملاقات",
+                    "transliteration": "Molaghat"
+                },
+                {
+                    "hebrew": "שיחה רשמית, דיון, מו''מ",
+                    "persian": "مذاکره",
+                    "transliteration": "Mozakereh"
+                },
+                {
+                    "hebrew": "ידע",
+                    "persian": "دانش",
+                    "transliteration": "Danesh"
+                },
+                {
+                    "hebrew": "ספר",
+                    "persian": "کتاب",
+                    "transliteration": "Ketab"
+                },
+                {
+                    "hebrew": "שיעור",
+                    "persian": "درس",
+                    "transliteration": "Dars"
+                },
+                {
+                    "hebrew": "זמן, תקופה",
+                    "persian": "زمان",
+                    "transliteration": "Zaman"
+                },
+                {
+                    "hebrew": "שעה/ שעון",
+                    "persian": "ساعت",
+                    "transliteration": "Saatt"
+                },
+                {
+                    "hebrew": "מאד, הרבה (מידתי)",
+                    "persian": "بسیار / خیلی",
+                    "transliteration": "Bsyar / Chyeli"
+                },
+                {
+                    "hebrew": "מאד, הרבה (כמותי)",
+                    "persian": "زیاد",
+                    "transliteration": "Ziyad"
+                },
+                {
+                    "hebrew": "סוף, סיום",
+                    "persian": "تمام",
+                    "transliteration": "Tamam"
+                }
+            ]
+        },
+        {
+            "title": "אוצר מילים מס' 11 (ספטמבר 23)",
+            "topic": "מדינה ופוליטיקה",
+            "items": [
+                {
+                    "hebrew": "מודיעין",
+                    "persian": "اطلاعات",
+                    "transliteration": "Etela'at"
+                },
+                {
+                    "hebrew": "רפובליקה",
+                    "persian": "جمهوری",
+                    "transliteration": "Jomhuri"
+                },
+                {
+                    "hebrew": "ראש, יו''ר, מנהל",
+                    "persian": "رئيس",
+                    "transliteration": "raees"
+                },
+                {
+                    "hebrew": "שגרירות",
+                    "persian": "سفارت",
+                    "transliteration": "sefarat"
+                },
+                {
+                    "hebrew": "שגריר",
+                    "persian": "سفیر",
+                    "transliteration": "safir"
+                },
+                {
+                    "hebrew": "פגישה",
+                    "persian": "ملاقات",
+                    "transliteration": "molaghat"
+                },
+                {
+                    "hebrew": "הומה, צפוף",
+                    "persian": "شلوغ",
+                    "transliteration": "sholugh"
+                },
+                {
+                    "hebrew": "פה, כאן",
+                    "persian": "اینجا",
+                    "transliteration": "Inja"
+                },
+                {
+                    "hebrew": "שם",
+                    "persian": "انجا",
+                    "transliteration": "anja"
+                },
+                {
+                    "hebrew": "חוץ",
+                    "persian": "بیرون",
+                    "transliteration": "biroon"
+                },
+                {
+                    "hebrew": "שר",
+                    "persian": "وزیر",
+                    "transliteration": "vazir"
+                },
+                {
+                    "hebrew": "אחרון",
+                    "persian": "آخیر",
+                    "transliteration": "akhir"
+                },
+                {
+                    "hebrew": "סוף, קץ, אחרון",
+                    "persian": "آخِر",
+                    "transliteration": "akhar"
+                },
+                {
+                    "hebrew": "(צד) שמאל",
+                    "persian": "چَپ",
+                    "transliteration": "Chap"
+                },
+                {
+                    "hebrew": "(צד) ימין, נכון",
+                    "persian": "راست",
+                    "transliteration": "Rast"
+                }
+            ]
+        },
+        {
+            "title": "אוצר מילים מס' 12 - פעלים (26/9/24)",
+            "topic": "פעלים בסיסיים",
+            "items": [
+                {
+                    "hebrew": "להיות",
+                    "persian": "بودن (است, هست)",
+                    "transliteration": "Bodan"
+                },
+                {
+                    "hebrew": "לבוא",
+                    "persian": "آمدن (آ)",
+                    "transliteration": "Aamdan"
+                },
+                {
+                    "hebrew": "לקבל",
+                    "persian": "گرفتن (گیر)",
+                    "transliteration": "Baz gshtan"
+                },
+                {
+                    "hebrew": "לחזור",
+                    "persian": "بر گشتن ( گرد )",
+                    "transliteration": "Br gshtan"
+                },
+                {
+                    "hebrew": "לשלם",
+                    "persian": "پرداختن ( پردا ز)",
+                    "transliteration": "Pardachtn"
+                },
+                {
+                    "hebrew": "לעסוק ב..",
+                    "persian": "پرداختن ( پردا ز)",
+                    "transliteration": "Pardachtn"
+                },
+                {
+                    "hebrew": "לשאול",
+                    "persian": "پرسیدن ( پرس )",
+                    "transliteration": "Porsidan"
+                },
+                {
+                    "hebrew": "לקנות, לרכוש",
+                    "persian": "خریدن ( خر )",
+                    "transliteration": "Chridan"
+                },
+                {
+                    "hebrew": "לישון",
+                    "persian": "خوابیدن ( خواب )",
+                    "transliteration": "Chabidan"
+                },
+                {
+                    "hebrew": "לבקש, לרצות, להתכוון",
+                    "persian": "خواستن ( خوا )",
+                    "transliteration": "Chasten"
+                },
+                {
+                    "hebrew": "לקרוא, לשיר",
+                    "persian": "خواندن ( خوان )",
+                    "transliteration": "Chandan"
+                },
+                {
+                    "hebrew": "לאכול",
+                    "persian": "خوردن ( خور )",
+                    "transliteration": "chordan"
+                }
+            ]
+        },
+        {
+            "title": "אוצר מילים מס' 13 (27/10/24)",
+            "topic": "תפקידים ומושגים רשמיים",
+            "items": [
+                {
+                    "hebrew": "שר המודיעין",
+                    "persian": "وزیر اطلاعات",
+                    "transliteration": "Vazir-e etela'at"
+                },
+                {
+                    "hebrew": "שר החוץ",
+                    "persian": "وزیر امور خارجه",
+                    "transliteration": "Vazir-e omur-e khareje"
+                },
+                {
+                    "hebrew": "שר ההגנה",
+                    "persian": "وزیر دفاع",
+                    "transliteration": "Vazir-e dafae"
+                },
+                {
+                    "hebrew": "שר הפנים",
+                    "persian": "وزیر کشور",
+                    "transliteration": "Vazir-e keshvar"
+                },
+                {
+                    "hebrew": "שם משפחה",
+                    "persian": "اسم خانوادگی",
+                    "transliteration": "Esm-e khanevadegi"
+                },
+                {
+                    "hebrew": "שם פרטי",
+                    "persian": "اسم کوچک",
+                    "transliteration": "Esm-e koochak"
+                },
+                {
+                    "hebrew": "מכשיר, מנגנון",
+                    "persian": "دستگاه",
+                    "transliteration": "Dastgah"
+                },
+                {
+                    "hebrew": "נומרטיב למניית חפצים",
+                    "persian": "عدد",
+                    "transliteration": "Adad"
+                },
+                {
+                    "hebrew": "נומרטיב למניית אנשים",
+                    "persian": "نفر",
+                    "transliteration": "Nafar"
+                },
+                {
+                    "hebrew": "מבחן",
+                    "persian": "امتحان",
+                    "transliteration": "Emtehan"
+                },
+                {
+                    "hebrew": "שיעור/ לימודים",
+                    "persian": "درس",
+                    "transliteration": "Dars"
+                },
+                {
+                    "hebrew": "מלחמה",
+                    "persian": "جَنگ",
+                    "transliteration": "Jang"
+                },
+                {
+                    "hebrew": "ישיבה",
+                    "persian": "جَلسه",
+                    "transliteration": "Jalase"
+                },
+                {
+                    "hebrew": "חברה",
+                    "persian": "شِرکت",
+                    "transliteration": "Sherkat"
+                },
+                {
+                    "hebrew": "קשר/ זיקה",
+                    "persian": "رابِطه",
+                    "transliteration": "Ravabet"
+                }
+            ]
+        },
+        {
+            "title": "אוצר מילים מס' 14 - פעלים (11/11/24)",
+            "topic": "פעלים מתקדמים",
+            "items": [
+                {
+                    "hebrew": "לפתוח",
+                    "persian": "باز کَردَن (کن)",
+                    "transliteration": "Baz kardan"
+                },
+                {
+                    "hebrew": "להתחיל במשהו",
+                    "persian": "شُروع کردن (کن)",
+                    "transliteration": "Shoro kardan"
+                },
+                {
+                    "hebrew": "לשבת",
+                    "persian": "نِشَستَن ( نِشَین )",
+                    "transliteration": "neshestan"
+                },
+                {
+                    "hebrew": "ללכת",
+                    "persian": "رَفتَن (رو)",
+                    "transliteration": "raftan"
+                },
+                {
+                    "hebrew": "להחזיר",
+                    "persian": "پَس دادَن (ده)",
+                    "transliteration": "Pas dadan"
+                },
+                {
+                    "hebrew": "לבצע",
+                    "persian": "اَنجام دادَن (ده)",
+                    "transliteration": "Anjam dadan"
+                },
+                {
+                    "hebrew": "להתבצע (סביל)",
+                    "persian": "اَنجام گِرِفتَن (گیر)",
+                    "transliteration": "Anjam gereftan"
+                },
+                {
+                    "hebrew": "לנסוע (לביקור/טיול)",
+                    "persian": "سَفَر کردن (کن)",
+                    "transliteration": "Safar kardan"
+                },
+                {
+                    "hebrew": "להמשיך",
+                    "persian": "اِدامه دادَن (ده)",
+                    "transliteration": "Edame dadan"
+                },
+                {
+                    "hebrew": "להימשך (סביל)",
+                    "persian": "اِدامه داشتَن (دار)",
+                    "transliteration": "Edame dashtan"
+                },
+                {
+                    "hebrew": "לשאול שאלה",
+                    "persian": "سُؤال کردن (کن)",
+                    "transliteration": "Sooal kardan"
+                },
+                {
+                    "hebrew": "לענות",
+                    "persian": "جَواب دادَن (ده)",
+                    "transliteration": "Jvab dadan"
+                }
+            ]
+        },
+        {
+            "title": "אוצר מילים מס' 15 - פעלים (25/12/22)",
+            "topic": "פעלים וביטויים",
+            "items": [
+                {
+                    "hebrew": "To have (יש ל-)",
+                    "persian": "داشتَن (دار)",
+                    "transliteration": "dashtan"
+                },
+                {
+                    "hebrew": "לקבל, לקחת",
+                    "persian": "گِرِفتَن (گیر)",
+                    "transliteration": "gereftan"
+                },
+                {
+                    "hebrew": "למסור",
+                    "persian": "تَحویل دادَن (ده)",
+                    "transliteration": "Tahvil dadn"
+                },
+                {
+                    "hebrew": "למכור",
+                    "persian": "فُروختَن ( فروش )",
+                    "transliteration": "Forochtan"
+                },
+                {
+                    "hebrew": "לשוחח, לדבר",
+                    "persian": "صُحبَت کردن (کن)",
+                    "transliteration": "Suhbat kardan"
+                },
+                {
+                    "hebrew": "להגיד",
+                    "persian": "گفتن (گو)",
+                    "transliteration": "Goftan"
+                },
+                {
+                    "hebrew": "בנוגע ל-",
+                    "persian": "دَربارۀ / دَر مُورِدِ",
+                    "transliteration": "Dr bare / Dr mored"
+                },
+                {
+                    "hebrew": "אחד מ-",
+                    "persian": "یِکی اَز",
+                    "transliteration": "Yeki az"
+                },
+                {
+                    "hebrew": "עבור, בשביל",
+                    "persian": "بَرایِ",
+                    "transliteration": "Braye"
+                },
+                {
+                    "hebrew": "איש",
+                    "persian": "فَرد",
+                    "transliteration": "Frd"
+                },
+                {
+                    "hebrew": "גבר",
+                    "persian": "مَرد",
+                    "transliteration": "Mard"
+                },
+                {
+                    "hebrew": "נסיעה",
+                    "persian": "سَفَر",
+                    "transliteration": "safar"
+                },
+                {
+                    "hebrew": "נשיא מדינה",
+                    "persian": "رَئیس جُمهور",
+                    "transliteration": "Raeis jomhour"
+                },
+                {
+                    "hebrew": "ראש ממשלה",
+                    "persian": "نُخُست وَزیر",
+                    "transliteration": "Nochost vazier"
+                },
+                {
+                    "hebrew": "מעניין",
+                    "persian": "جالب",
+                    "transliteration": "Jaleb"
+                },
+                {
+                    "hebrew": "הקודם",
+                    "persian": "قبلی",
+                    "transliteration": "ghabli"
+                }
+            ]
+        }
+    ]
+}
