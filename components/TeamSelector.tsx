@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import playersData from "@/data/players.json";
 import { Player, TeamData } from "@/types";
-import { checkIdAvailability, registerNewPlayer } from "@/firebase/db"; // ייבוא הפונקציות החדשות
+import { registerNewPlayer, subscribeToTakenPlayers } from "@/firebase/db"; // ייבוא הפונקציה החדשה
 
 interface TeamSelectorProps {
     onJoin: (player: Player, team: "beer_sheva" | "eilat") => void;
@@ -11,14 +11,31 @@ export default function TeamSelector({ onJoin }: TeamSelectorProps) {
     const [selectedTeam, setSelectedTeam] = useState<"beer_sheva" | "eilat" | null>(null);
     const [selectedPlayerId, setSelectedPlayerId] = useState<string>("");
 
-    // מצבים לטיפול בבדיקה מול השרת
+    // רשימת השמות התפוסים (מתעדכנת בזמן אמת)
+    const [takenIds, setTakenIds] = useState<Set<string>>(new Set());
+
     const [isChecking, setIsChecking] = useState(false);
     const [errorMsg, setErrorMsg] = useState<string | null>(null);
 
     const teams = playersData as TeamData;
 
+    // --- האזנה לשינויים ב-DB ---
+    useEffect(() => {
+        // ברגע שמישהו נרשם, נקבל עדכון ונוסיף אותו לרשימת התפוסים
+        const unsubscribe = subscribeToTakenPlayers((ids) => {
+            setTakenIds(new Set(ids));
+        });
+        return () => unsubscribe();
+    }, []);
+
     const handleJoinClick = async () => {
         if (!selectedTeam || !selectedPlayerId) return;
+
+        // בדיקה נוספת ליתר ביטחון (למקרה שהרשימה לא הספיקה להתעדכן)
+        if (takenIds.has(selectedPlayerId)) {
+            setErrorMsg("השם הזה נתפס ממש עכשיו! בחר שם אחר.");
+            return;
+        }
 
         setIsChecking(true);
         setErrorMsg(null);
@@ -29,23 +46,13 @@ export default function TeamSelector({ onJoin }: TeamSelectorProps) {
         if (!player) return;
 
         try {
-            // 1. בדיקה מול Firebase האם השם פנוי
-            const isAvailable = await checkIdAvailability(player.id);
-
-            if (!isAvailable) {
-                setErrorMsg("השם הזה כבר תפוס על ידי מכשיר אחר! בחר שם אחר.");
-                setIsChecking(false);
-                return;
-            }
-
-            // 2. השם פנוי - רושמים אותו ב-DB (נועלים אותו)
+            // רישום השחקן ב-DB (זה מה שנועל אותו לאחרים)
             await registerNewPlayer(player.id, player.name, selectedTeam);
 
-            // 3. שמירה בלוקאל סטורג' (כדי שבפעם הבאה לא נצטרך לבחור)
+            // שמירה בלוקאל סטורג'
             const userData = { player, team: selectedTeam };
             localStorage.setItem("atidim_user", JSON.stringify(userData));
 
-            // 4. כניסה למשחק
             onJoin(player, selectedTeam);
 
         } catch (error) {
@@ -99,16 +106,24 @@ export default function TeamSelector({ onJoin }: TeamSelectorProps) {
                         className="w-full p-4 bg-white border border-gray-300 rounded-xl text-lg focus:ring-2 focus:ring-blue-500 outline-none"
                     >
                         <option value="" disabled>
-                            -- בחר את השם שלך --
+                            -- מה שמך? --
                         </option>
-                        {teams[selectedTeam].map((player) => (
-                            <option key={player.id} value={player.id}>
-                                {player.name}
-                            </option>
-                        ))}
+                        {teams[selectedTeam].map((player) => {
+                            const isTaken = takenIds.has(player.id);
+                            return (
+                                <option
+                                    key={player.id}
+                                    value={player.id}
+                                    disabled={isTaken} // מנטרל את האפשרות לבחור
+                                    className={isTaken ? "text-gray-400 bg-gray-100" : ""}
+                                >
+                                    {player.name} 
+                                </option>
+                            );
+                        })}
                     </select>
 
-                    {/* הודעת שגיאה אם השם תפוס */}
+                    {/* הודעת שגיאה */}
                     {errorMsg && (
                         <div className="bg-red-50 text-red-600 p-3 rounded-lg text-sm font-bold border border-red-200">
                             {errorMsg}
@@ -123,7 +138,7 @@ export default function TeamSelector({ onJoin }: TeamSelectorProps) {
                                 : "bg-gray-300 cursor-not-allowed"
                             }`}
                     >
-                        {isChecking ? "בודק זמינות..." : "כנס למשחק!"}
+                        {isChecking ? "רושם אותך..." : "כנס למשחק!"}
                     </button>
                 </div>
             )}

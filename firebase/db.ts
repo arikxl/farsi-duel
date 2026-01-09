@@ -1,21 +1,67 @@
 import { db } from "./firebase";
-import { doc, setDoc, onSnapshot, collection, query, getDoc } from "firebase/firestore";
+import {
+    doc,
+    setDoc,
+    getDoc,
+    onSnapshot,
+    collection,
+    query,
+    orderBy,
+    increment
+} from "firebase/firestore";
 
-// פונקציה לשמירת הניקוד של שחקן בסוף משחק
+// --- פונקציות קיימות (בדיקת זמינות ורישום) ---
+export const checkIdAvailability = async (playerId: string): Promise<boolean> => {
+    const docRef = doc(db, "players", playerId);
+    const docSnap = await getDoc(docRef);
+    return !docSnap.exists();
+};
+
+export const registerNewPlayer = async (
+    playerId: string,
+    playerName: string,
+    team: "beer_sheva" | "eilat"
+) => {
+    await setDoc(doc(db, "players", playerId), {
+        id: playerId,
+        name: playerName,
+        team: team,
+        score: 0,
+        registeredAt: new Date().toISOString(),
+    });
+};
+
+export const subscribeToTakenPlayers = (
+    callback: (takenIds: string[]) => void
+) => {
+    const q = query(collection(db, "players"));
+    const unsubscribe = onSnapshot(q, (querySnapshot) => {
+        const takenIds: string[] = [];
+        querySnapshot.forEach((doc) => {
+            takenIds.push(doc.id);
+        });
+        callback(takenIds);
+    });
+    return unsubscribe;
+};
+
+// --- השינוי הגדול: שמירת ניקוד מצטבר ---
 export const savePlayerScore = async (
     playerId: string,
     playerName: string,
     team: "beer_sheva" | "eilat",
-    score: number
+    pointsToAdd: number
 ) => {
     try {
+        // increment מוסיפה את הנקודות החדשות למה שכבר יש ב-DB
+        // זה אטומי ובטוח (מונע בעיות אם שני עדכונים קורים יחד)
         await setDoc(
             doc(db, "players", playerId),
             {
                 id: playerId,
                 name: playerName,
                 team: team,
-                score: score,
+                score: increment(pointsToAdd), // <--- כאן הקסם
                 lastPlayed: new Date().toISOString(),
             },
             { merge: true }
@@ -25,7 +71,7 @@ export const savePlayerScore = async (
     }
 };
 
-// פונקציה שמאזינה לשינויים בזמן אמת ומחזירה את הסיכום הקבוצתי
+// פונקציה שמחשבת את הסיכום הקבוצתי (נשארה זהה)
 export const subscribeToScores = (
     callback: (scores: { beer_sheva: number; eilat: number }) => void
 ) => {
@@ -42,30 +88,28 @@ export const subscribeToScores = (
     });
     return unsubscribe;
 };
-// פונקציה חדשה: בדיקה האם השם כבר תפוס
-export const checkIdAvailability = async (playerId: string): Promise<boolean> => {
-    const docRef = doc(db, "players", playerId);
-    const docSnap = await getDoc(docRef);
 
-    // אם המסמך קיים, סימן שהשם תפוס
-    return !docSnap.exists();
-};
+// --- פונקציה חדשה: קבלת טבלת המובילים המלאה ---
+export interface LeaderboardEntry {
+    id: string;
+    name: string;
+    team: "beer_sheva" | "eilat";
+    score: number;
+}
 
-
-
-// פונקציה חדשה: רישום שחקן חדש (נועלת את השם)
-export const registerNewPlayer = async (
-    playerId: string,
-    playerName: string,
-    team: "beer_sheva" | "eilat"
+export const subscribeToLeaderboard = (
+    callback: (players: LeaderboardEntry[]) => void
 ) => {
-    // שמירה ראשונית עם ניקוד 0
-    await setDoc(doc(db, "players", playerId), {
-        id: playerId,
-        name: playerName,
-        team: team,
-        score: 0,
-        registeredAt: new Date().toISOString(),
-        userAgent: navigator.userAgent // אופציונלי: לדעת מאיזה מכשיר נרשם
+    // שואבים את השחקנים ממוינים לפי ניקוד יורד
+    const q = query(collection(db, "players"), orderBy("score", "desc"));
+
+    const unsubscribe = onSnapshot(q, (querySnapshot) => {
+        const players: LeaderboardEntry[] = [];
+        querySnapshot.forEach((doc) => {
+            const data = doc.data() as LeaderboardEntry;
+            players.push(data);
+        });
+        callback(players);
     });
+    return unsubscribe;
 };

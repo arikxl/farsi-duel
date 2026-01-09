@@ -1,4 +1,3 @@
-/* eslint-disable react-hooks/set-state-in-effect */
 "use client";
 
 import { useState, useEffect } from "react";
@@ -6,6 +5,7 @@ import WelcomeScreen from "@/components/WelcomeScreen";
 import TeamSelector from "@/components/TeamSelector";
 import GameArena from "@/components/GameArena";
 import CompetitionBar from "@/components/CompetitionBar";
+import LeaderboardModal from "@/components/LeaderboardModal"; // <--- ייבוא חדש
 import { GameState, Player } from "@/types";
 import { savePlayerScore } from "@/firebase/db";
 
@@ -15,18 +15,17 @@ export default function Home() {
   const [currentTeam, setCurrentTeam] = useState<"beer_sheva" | "eilat" | null>(null);
   const [finalScore, setFinalScore] = useState(0);
 
-  // --- הוספנו: בדיקת LocalStorage בטעינה ---
+  // --- סטייט חדש לניהול המודאל ---
+  const [showLeaderboard, setShowLeaderboard] = useState(false);
+
   useEffect(() => {
     const savedUser = localStorage.getItem("atidim_user");
     if (savedUser) {
       try {
         const { player, team } = JSON.parse(savedUser);
         if (player && team) {
-          console.log("Auto-login from localStorage:", player.name);
           setCurrentPlayer(player);
           setCurrentTeam(team);
-          // אפשר להעביר ישר ל-PLAYING או להשאיר ב-WELCOME והכפתור יהיה "המשך כ-[שם]"
-          // כרגע נשאיר ב-WELCOME כדי שיראה את החוקים, אבל כשהוא ילחץ "התחל" נדלג על בחירת הקבוצה
         }
       } catch (e) {
         console.error("Failed to parse user data", e);
@@ -35,7 +34,6 @@ export default function Home() {
   }, []);
 
   const handleStartGame = () => {
-    // אם כבר יש לנו שחקן (מהלוקאל סטורג'), דלג ישר למשחק
     if (currentPlayer && currentTeam) {
       setGameState("PLAYING");
     } else {
@@ -43,7 +41,6 @@ export default function Home() {
     }
   };
 
-  // ... (שאר הפונקציות: handleJoinGame, handleGameOver נשארות זהות)
   const handleJoinGame = (player: Player, team: "beer_sheva" | "eilat") => {
     setCurrentPlayer(player);
     setCurrentTeam(team);
@@ -53,30 +50,34 @@ export default function Home() {
   const handleGameOver = async (score: number, isPerfect: boolean) => {
     setFinalScore(score);
     if (currentPlayer && currentTeam) {
+      // הנקודות עכשיו יצטברו!
       await savePlayerScore(currentPlayer.id, currentPlayer.name, currentTeam, score);
     }
     setGameState("GAME_OVER");
   };
 
-  // פונקציית התנתקות (אופציונלי - אם תרצה כפתור יציאה בעתיד)
-  /*
-  const handleLogout = () => {
-    localStorage.removeItem("atidim_user");
-    setCurrentPlayer(null);
-    setCurrentTeam(null);
-    setGameState("WELCOME");
-  };
-  */
-
   return (
     <>
-      <CompetitionBar />
+      {/* לחיצה על הבר תפתח את הטבלה */}
+      <div onClick={() => setShowLeaderboard(true)} className="cursor-pointer transition-transform active:scale-[0.99]">
+        <CompetitionBar />
+      </div>
 
       <div className="flex-1 relative overflow-hidden flex flex-col">
+
+        {/* הצגת המודאל אם הוא פתוח */}
+        {showLeaderboard && (
+          <LeaderboardModal
+            onClose={() => setShowLeaderboard(false)}
+            currentPlayerId={currentPlayer?.id}
+          />
+        )}
+
         {gameState === "WELCOME" && (
           <WelcomeScreen
             onStart={handleStartGame}
-            playerName={currentPlayer?.name} 
+            playerName={currentPlayer?.name}
+            onShowLeaderboard={() => setShowLeaderboard(true)} 
           />
         )}
 
@@ -93,20 +94,22 @@ export default function Home() {
             <h1 className="text-4xl font-bold mb-4 text-gray-800">המשחק הסתיים!</h1>
             <div className="text-6xl mb-6">🏆</div>
 
-            <p className="text-xl text-gray-500 mb-2">הניקוד שלך:</p>
-            <p className="text-6xl font-black text-blue-600 mb-8">{finalScore}</p>
+            <p className="text-xl text-gray-500 mb-2">צברת בסיבוב זה:</p>
+            <p className="text-6xl font-black text-blue-600 mb-8">+{finalScore}</p>
 
-            <div className="text-sm text-gray-400 mb-8 bg-gray-50 p-4 rounded-lg">
-              הניקוד עודכן בלוח התוצאות הקבוצתי.
-              <br />
-              הצוות שלך מודה לך!
-            </div>
+            {/* כפתור נוסף לפתיחת הטבלה בסוף המשחק */}
+            <button
+              onClick={() => setShowLeaderboard(true)}
+              className="text-blue-600 font-bold underline mb-8"
+            >
+             טבלת האלופים
+            </button>
 
             <button
-              onClick={() => setGameState("WELCOME")} // יחזיר אותו למסך פתיחה, אבל הנתונים עדיין שמורים למשחק הבא
-              className="bg-gray-900 hover:bg-black text-white px-8 py-3 rounded-xl font-bold transition-transform active:scale-95 shadow-lg"
+              onClick={() => setGameState("WELCOME")}
+              className="bg-gray-900 hover:bg-black text-white px-12 py-3 rounded-xl font-bold transition-transform active:scale-95 shadow-lg"
             >
-              משחק חדש
+             משחק נוסף
             </button>
           </div>
         )}

@@ -193,7 +193,7 @@ export default function GameArena({ onGameOver }: GameArenaProps) {
 
                 {/* צד שמאל: טיימר */}
                 <div className={`font-mono font-bold text-xl z-20 relative ${timeLeft <= 3 ? 'text-[#DA0000] animate-pulse' : 'text-gray-700'}`}>
-                    00:{timeLeft.toString().padStart(2, '0')}
+                    {timeLeft.toString().padStart(2, '0')}
                 </div>
             </div>
 
