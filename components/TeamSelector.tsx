@@ -66,7 +66,7 @@ export default function TeamSelector({ onJoin }: TeamSelectorProps) {
     return (
         <div className="flex flex-col h-full p-6 bg-gray-50 overflow-y-auto">
             <h2 className="text-2xl font-bold text-center mb-8 text-gray-800">
-                בחר את הצוות שלך
+               מי הצוות שלך?
             </h2>
 
             {/* בחירת קבוצה */}
@@ -78,7 +78,7 @@ export default function TeamSelector({ onJoin }: TeamSelectorProps) {
                             : "border-gray-200 bg-white hover:border-red-300"
                         }`}
                 >
-                    <div className="text-3xl mb-2">🐫</div>
+                    <div className="text-6xl mb-2">🐫</div>
                     <div className="font-bold text-gray-900">באר שבע</div>
                 </button>
 
@@ -89,7 +89,7 @@ export default function TeamSelector({ onJoin }: TeamSelectorProps) {
                             : "border-gray-200 bg-white hover:border-blue-300"
                         }`}
                 >
-                    <div className="text-3xl mb-2">🌊</div>
+                    <div className="text-6xl mb-2">🐬</div>
                     <div className="font-bold text-gray-900">אילת</div>
                 </button>
             </div>
@@ -97,15 +97,12 @@ export default function TeamSelector({ onJoin }: TeamSelectorProps) {
             {/* בחירת שם */}
             {selectedTeam && (
                 <div className="space-y-4 animate-fade-in-up pb-10">
-                    <label className="block text-sm font-medium text-gray-700">
-                        מי אתה ברשימה?
-                    </label>
                     <select
                         value={selectedPlayerId}
                         onChange={(e) => { setSelectedPlayerId(e.target.value); setErrorMsg(null); }}
                         className="w-full p-4 bg-white border border-gray-300 rounded-xl text-lg focus:ring-2 focus:ring-blue-500 outline-none"
                     >
-                        <option value="" disabled>
+                        <option value="" disabled className="text-center">
                             -- מה שמך? --
                         </option>
                         {teams[selectedTeam].map((player) => {
@@ -134,11 +131,11 @@ export default function TeamSelector({ onJoin }: TeamSelectorProps) {
                         onClick={handleJoinClick}
                         disabled={!selectedPlayerId || isChecking}
                         className={`w-full py-4 mt-6 rounded-xl text-xl font-bold text-white transition-all shadow-md ${selectedPlayerId && !isChecking
-                                ? "bg-green-600 hover:bg-green-700 transform active:scale-95"
+                                ? "bg-yellow-500 hover:bg-orange-600 transform active:scale-95"
                                 : "bg-gray-300 cursor-not-allowed"
                             }`}
                     >
-                        {isChecking ? "רושם אותך..." : "כנס למשחק!"}
+                        {isChecking ? "רושם אותך..." : "מתחילים!"}
                     </button>
                 </div>
             )}

@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/set-state-in-effect */
 "use client";
 
 import { useState, useEffect } from "react";
@@ -91,7 +92,15 @@ export default function Home() {
 
         {gameState === "GAME_OVER" && (
           <div className="flex flex-col items-center justify-center h-full p-8 text-center bg-white animate-fade-in">
-            <h1 className="text-4xl font-bold mb-4 text-gray-800">המשחק הסתיים!</h1>
+            <h1 className="text-4xl font-bold mb-4 text-gray-800">
+              כל הכבוד&nbsp;
+              {
+
+                currentPlayer?.name ? currentPlayer.name :''
+              }!
+          
+             
+            </h1>
             <div className="text-6xl mb-6">🏆</div>
 
             <p className="text-xl text-gray-500 mb-2">צברת בסיבוב זה:</p>
@@ -107,7 +116,7 @@ export default function Home() {
 
             <button
               onClick={() => setGameState("WELCOME")}
-              className="bg-gray-900 hover:bg-black text-white px-12 py-3 rounded-xl font-bold transition-transform active:scale-95 shadow-lg"
+              className="w-full bg-yellow-500 hover:bg-orange-600 text-white  py-3 rounded-xl font-bold transition-transform active:scale-95 shadow-lg"
             >
              משחק נוסף
             </button>

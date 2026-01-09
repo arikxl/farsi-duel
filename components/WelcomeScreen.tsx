@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 interface WelcomeScreenProps {
@@ -8,23 +9,14 @@ interface WelcomeScreenProps {
 
 export default function WelcomeScreen({ onStart, onShowLeaderboard, playerName }: WelcomeScreenProps) {
     return (
-        <div className="flex flex-col items-center justify-between h-full bg-gradient-to-b from-blue-50 via-white to-gray-50 overflow-y-auto">
+        <div className="flex flex-col items-center justify-between h-full bg-linear-to-b from-blue-50 via-white to-gray-50 overflow-y-auto h-full">
 
             {/* חלק עליון - תוכן גלילה */}
-            <div className="flex flex-col items-center w-full p-8 flex-1">
+            <div className="flex flex-col items-center w-full px-8 pb-2 pt-0 flex-1">
 
                 {/* לוגו וכותרת */}
-                <div className="mt-6 space-y-2 text-center animate-fade-in-down">
-                    <div className="text-6xl mb-4 drop-shadow-md">⚔️</div>
-                    <h1 className="text-4xl font-black text-blue-900 tracking-tight">
-                        עתידים בו"מ
-                        <span className="block text-2xl text-blue-600 font-bold mt-1">
-                            אתגר הפרסית
-                        </span>
-                    </h1>
-                    <div className="inline-block bg-blue-100 text-blue-800 px-4 py-1 rounded-full text-sm font-bold mt-2 border border-blue-200">
-                        באר שבע VS אילת
-                    </div>
+                <div className="mt-2 animate-fade-in-down">
+                    <Image alt='עתידים בום' src={'/logo77.png' } width={300} height={200}/>
                 </div>
 
                 {/* חוקים */}
@@ -35,11 +27,11 @@ export default function WelcomeScreen({ onStart, onShowLeaderboard, playerName }
                     </div>
                     <div className="flex items-center gap-3">
                         <span className="text-2xl bg-red-50 p-2 rounded-lg">❤️</span>
-                        <span className="font-medium">3 פסילות ונפסלת</span>
+                        <span className="font-medium">3 פסילות ונגמר</span>
                     </div>
                     <div className="flex items-center gap-3">
                         <span className="text-2xl bg-yellow-50 p-2 rounded-lg">🏆</span>
-                        <span className="font-medium">צבירת נקודות קבוצתית</span>
+                        <span className="font-medium">בונוס על משחק ללא טעויות</span>
                     </div>
                 </div>
 
@@ -47,10 +39,9 @@ export default function WelcomeScreen({ onStart, onShowLeaderboard, playerName }
                 <div className="w-full mt-8 space-y-3">
                     <button
                         onClick={onStart}
-                        className="w-full bg-blue-600 hover:bg-blue-700 text-white text-xl font-bold py-4 rounded-xl shadow-lg shadow-blue-200 transform transition active:scale-95 flex items-center justify-center gap-2"
+                        className="w-full bg-yellow-500 hover:bg-orange-600 text-white text-xl font-bold py-4 rounded-xl shadow-lg shadow-blue-200 transform transition active:scale-95 flex items-center justify-center gap-2"
                     >
-                        {playerName ? `בהצלחה, ${playerName}!` : "התחל משחק"}
-                        <span>🚀</span>
+                        {playerName ? `בהצלחה ${playerName}!` : "הבנתי!"}
                     </button>
 
                     <button
@@ -65,13 +56,13 @@ export default function WelcomeScreen({ onStart, onShowLeaderboard, playerName }
             </div>
 
             {/* Footer חדש ומעוצב */}
-            <footer className="w-full bg-gray-900 text-gray-400 py-4 px-6 text-center text-xs mt-auto">
-                <div className="flex justify-center items-center gap-4 mb-2 opacity-50 grayscale hover:grayscale-0 transition-all">
-                    {/* מקום ללוגואים אם תרצה בעתיד */}
-                    {/* <img src="/logo-atidim.png" alt="Atidim" className="h-6" /> */}
-                </div>
-                <p className="mt-1 opacity-60">
-                    פיתוח ועיצוב: אריק | מחזור 2026 ©
+            <footer className="w-full bg-yellow-500 py-2 px-6 text-center text-sm mt-auto">
+                <p className="mt-1 ">
+                    Created by&nbsp;
+                    <a href="https://www.linkedin.com/in/arik-alexandrov/" target="_blank"
+                        className="underline">
+                        arikxl
+                    </a>
                 </p>
             </footer>
         </div>
