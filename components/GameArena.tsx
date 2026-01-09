@@ -174,19 +174,25 @@ export default function GameArena({ onGameOver }: GameArenaProps) {
     return (
         <div className="relative flex flex-col h-full bg-gray-50 overflow-hidden">
 
-            {/* HUD */}
-            <div className="flex justify-between items-center p-4 bg-white shadow-sm z-10">
-                <div className="flex gap-1 text-red-500 text-xl">
+            {/* HUD מתוקן - הניקוד ממורכז אבסולוטית */}
+            <div className="relative flex justify-between items-center p-4 bg-white shadow-sm z-10 h-16">
+
+                {/* צד ימין: חיים (לבבות) */}
+                <div className="flex gap-1 text-red-500 text-xl z-20 relative">
                     {[...Array(3)].map((_, i) => (
                         <span key={i} className={i < lives ? "opacity-100" : "opacity-20 grayscale"}>
                             ❤️
                         </span>
                     ))}
                 </div>
-                <div className="font-bold text-xl text-blue-900">
-                    {score} נק&apos;
+
+                {/* מרכז: ניקוד (ממוקם מעל הכל במרכז המדויק) */}
+                <div className="absolute inset-0 flex items-center justify-center font-bold text-xl text-blue-900 pointer-events-none">
+                    {score} נק'
                 </div>
-                <div className={`font-mono font-bold text-xl ${timeLeft <= 3 ? 'text-[#DA0000] animate-pulse' : 'text-gray-700'}`}>
+
+                {/* צד שמאל: טיימר */}
+                <div className={`font-mono font-bold text-xl z-20 relative ${timeLeft <= 3 ? 'text-[#DA0000] animate-pulse' : 'text-gray-700'}`}>
                     00:{timeLeft.toString().padStart(2, '0')}
                 </div>
             </div>
@@ -195,7 +201,7 @@ export default function GameArena({ onGameOver }: GameArenaProps) {
             <div className="w-full h-2 bg-gray-200">
                 <div
                     className="h-full bg-[#239F40] transition-all duration-300"
-                    style={{ width: `${((currentIndex) / 20) * 100}%` }} // שינוי ל-20 קבוע כדי שיראה התקדמות אמיתית
+                    style={{ width: `${((currentIndex) / 20) * 100}%` }}
                 ></div>
                 <div className="text-xs text-center text-gray-400 mt-1">
                     שאלה {currentIndex + 1} מתוך {questions.length}

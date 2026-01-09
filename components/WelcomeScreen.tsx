@@ -2,9 +2,10 @@ import React from "react";
 
 interface WelcomeScreenProps {
     onStart: () => void;
+    playerName?: string; // הוספנו משתנה אופציונלי לשם השחקן
 }
 
-export default function WelcomeScreen({ onStart }: WelcomeScreenProps) {
+export default function WelcomeScreen({ onStart, playerName }: WelcomeScreenProps) {
     return (
         <div className="flex flex-col items-center justify-between h-full p-8 text-center bg-gradient-to-b from-blue-50 to-white">
 
@@ -12,7 +13,7 @@ export default function WelcomeScreen({ onStart }: WelcomeScreenProps) {
             <div className="mt-10 space-y-4 animate-fade-in-down">
                 <div className="text-6xl mb-4">⚔️</div>
                 <h1 className="text-4xl font-black text-blue-900 tracking-tight">
-                    עתידים בו&quot;מ
+                    עתידים בו"מ
                     <span className="block text-2xl text-blue-600 font-bold mt-2">
                         אתגר הפרסית
                     </span>
@@ -41,10 +42,14 @@ export default function WelcomeScreen({ onStart }: WelcomeScreenProps) {
                     onClick={onStart}
                     className="w-full bg-blue-600 hover:bg-blue-700 text-white text-xl font-bold py-4 rounded-xl shadow-lg transform transition active:scale-95"
                 >
-                    התחל משחק
+                    {/* כאן השינוי: אם יש שם, מציגים אותו. אם לא - טקסט רגיל */}
+                    {playerName ? `בהצלחה, ${playerName}!` : "התחל משחק"}
                 </button>
+
+        
+
                 <p className="text-xs text-gray-400 mt-4">
-                    פותח ע&quot;י אריק | מחזור 2026
+                    פותח ע"י אריק | מחזור 2026
                 </p>
             </div>
         </div>
