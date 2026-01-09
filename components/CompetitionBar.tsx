@@ -40,7 +40,7 @@ export default function CompetitionBar() {
     const { bs: bsPercent, ei: eiPercent } = calculateWidths();
 
     return (
-        <div className="w-full h-16 flex text-white font-bold text-2xl shadow-lg sticky top-0 z-50 overflow-hidden font-sans bg-gray-900">
+        <div className="w-full h-16 flex text-white font-bold text-2xl shadow-lg sticky top-0 z-50 overflow-hidden bg-gray-900">
 
             {/* צד ימין - באר שבע (אדום) */}
             <div
