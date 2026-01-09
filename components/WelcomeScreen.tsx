@@ -30,8 +30,8 @@ export default function WelcomeScreen({ onStart, onShowLeaderboard, playerName }
                         <span className="font-medium">3 פסילות ונגמר</span>
                     </div>
                     <div className="flex items-center gap-3">
-                        <span className="text-2xl bg-yellow-50 p-2 rounded-lg">🏆</span>
-                        <span className="font-medium">בונוס על משחק ללא טעויות</span>
+                        <span className="text-2xl bg-yellow-50 p-2 rounded-lg">💪🏻</span>
+                        <span className="font-medium">לא טעית? קיבלת בונוס!</span>
                     </div>
                 </div>
 
