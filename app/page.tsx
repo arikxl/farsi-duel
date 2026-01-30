@@ -20,7 +20,7 @@ export default function Home() {
   const [showLeaderboard, setShowLeaderboard] = useState(false);
 
   useEffect(() => {
-    const savedUser = localStorage.getItem("atidim_user");
+    const savedUser = localStorage.getItem("boom_user");
     if (savedUser) {
       try {
         const { player, team } = JSON.parse(savedUser);

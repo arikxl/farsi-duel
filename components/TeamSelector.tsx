@@ -51,7 +51,7 @@ export default function TeamSelector({ onJoin }: TeamSelectorProps) {
 
             // שמירה בלוקאל סטורג'
             const userData = { player, team: selectedTeam };
-            localStorage.setItem("atidim_user", JSON.stringify(userData));
+            localStorage.setItem("boom_user", JSON.stringify(userData));
 
             onJoin(player, selectedTeam);
 

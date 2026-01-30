@@ -501,8 +501,8 @@
             ]
         },
         {
-            "title": "אוצר מילים מס' 7 (19/1/23)",
-            "topic": "זמן ועונות",
+            "title": "אוצר מילים מס' 7 (15/1/25)",
+            "topic": "מילים שקשורות בזמן",
             "items": [
                 {
                     "hebrew": "קיץ",
@@ -551,8 +551,13 @@
                 },
                 {
                     "hebrew": "עכשיו",
-                    "persian": "حالا / اَلآن",
-                    "transliteration": "Hala / Alan"
+                    "persian": "حالا",
+                    "transliteration": "Hala"
+                },
+                {
+                    "hebrew": "עכשיו",
+                    "persian": "اَلآن",
+                    "transliteration": "Alan"
                 },
                 {
                     "hebrew": "מקודם, לפני",
@@ -1171,6 +1176,122 @@
                     "hebrew": "הקודם",
                     "persian": "قبلی",
                     "transliteration": "ghabli"
+                }
+            ]
+        },
+        {
+            "title": "אוצר מילים מס' 16 (10/2/25)",
+            "topic": "כללי ופעלים נוספים",
+            "items": [
+                {
+                    "hebrew": "בניין",
+                    "persian": "ساختِمان",
+                    "transliteration": "SACHTEMAN"
+                },
+                {
+                    "hebrew": "הר",
+                    "persian": "کوه",
+                    "transliteration": "KUOH"
+                },
+                {
+                    "hebrew": "נציג",
+                    "persian": "نَمایَنده",
+                    "transliteration": "NMAYENDEH"
+                },
+                {
+                    "hebrew": "תמונה",
+                    "persian": "عَکس",
+                    "transliteration": "AAKS"
+                },
+                {
+                    "hebrew": "ארוך (במובן של זמן)/ מתמשך",
+                    "persian": "طولانی",
+                    "transliteration": "TULANI"
+                },
+                {
+                    "hebrew": "שום עתיד/ ללא עתיד",
+                    "persian": "هیچ نَتیجه",
+                    "transliteration": "HICH NATIJEH"
+                },
+                {
+                    "hebrew": "הודעה",
+                    "persian": "پیام",
+                    "transliteration": "PAYAM"
+                },
+                {
+                    "hebrew": "חוזה",
+                    "persian": "قرارداد",
+                    "transliteration": "GHARARDAD"
+                },
+                {
+                    "hebrew": "דומה ל../ בדומה ל..",
+                    "persian": "شامِل",
+                    "transliteration": "SHAMEL"
+                },
+                {
+                    "hebrew": "במהלך",
+                    "persian": "طیِ",
+                    "transliteration": "TY"
+                },
+                {
+                    "hebrew": "רק",
+                    "persian": "فَقَط",
+                    "transliteration": "FAGHAT"
+                },
+                {
+                    "hebrew": "רופא",
+                    "persian": "پِزِشک",
+                    "transliteration": "PEZESHK"
+                },
+                {
+                    "hebrew": "בית חולים",
+                    "persian": "بیمارستان",
+                    "transliteration": "BIMARESTAN"
+                },
+                {
+                    "hebrew": "ערני/ חכם",
+                    "persian": "باهوشی",
+                    "transliteration": "BAHOSHI"
+                },
+                {
+                    "hebrew": "יקר",
+                    "persian": "گِران",
+                    "transliteration": "GRAN"
+                },
+                {
+                    "hebrew": "ארוחת צהריים",
+                    "persian": "نهار",
+                    "transliteration": "NAHAR"
+                },
+                {
+                    "hebrew": "מסעדה",
+                    "persian": "رِستوران",
+                    "transliteration": "RESTORAN"
+                },
+                {
+                    "hebrew": "לעזור",
+                    "persian": "کُمَک کردن (کن)",
+                    "transliteration": "KOMAK KARDAN"
+                },
+                {
+                    "hebrew": "למצוא",
+                    "persian": "پیدا کردن (کن)",
+                    "transliteration": "PEYDA KARDAN"
+                },
+                {
+                    "hebrew": "לחתום",
+                    "persian": "امضا کردن (کن)",
+                    "transliteration": "EMZA KARDAN"
+                },
+                {
+                    "hebrew": "לחיות",
+                    "persian": "زندگی کردن (کن)",
+                    "transliteration": "ZENDGI KARDAN"
+                },
+                {
+                    "hebrew": "להשתמש",
+                    "persian": "اِستفاده کردن (کن)",
+                    "transliteration": "ESTEFADE KARDAN"
                 }
             ]
         }
